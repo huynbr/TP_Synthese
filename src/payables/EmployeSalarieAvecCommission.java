@@ -31,7 +31,7 @@ public class EmployeSalarieAvecCommission extends EmployeSalarie {
     }
 
     public void setVentesBrutes(double ventes) {
-        if (ventes >= 0) {
+        if (ventes > 0) {
             ventesBrutes = ventes;
         } else {
             throw new IllegalArgumentException("Les ventes brutes doivent être nulles ou positives.");
